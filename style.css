@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: red;
+    height: 100vh;
+    width: 100vw;
+    transition: all 0.4s ease-in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 60px;
+    font-weight: 800;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+                 0 2px 2px rgba(0, 0, 0, 0.11),
+                 0 4px 4px rgba(0, 0, 0, 0.11),
+                 0 6px 8px rgba(0, 0, 0, 0.11),
+                 0 8px 16px rgba(0, 0, 0, 0.11);
+    bottom: 50px;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 8px 17px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11),
+                0 2px 2px rgba(0, 0, 0, 0.11),
+                0 4px 4px rgba(0, 0, 0, 0.11),
+                0 6px 8px rgba(0, 0, 0, 0.11),
+                0 8px 16px rgba(0, 0, 0, 0.11);
+}
+.container button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    font-size: 23px;
+    font-weight: 500;
+    outline: none;
+    background: transparent;
+    z-index: 10000;
+}
+.container .copy {
+    display: none;
+    position: relative;
+    margin-left: 20px;
+    font-size: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container i.show {
+    display: block;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 45px;
+    }
+    .container {
+        padding: 5px 15px;
+    }
+    .container button {
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .container .copy {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    h1 {
+        font-size: 40px;
+    }
+}
