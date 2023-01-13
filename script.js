@@ -23,7 +23,7 @@ function colorGenerate() {
         inputElement.select();
         document.execCommand("copy");
         inputElement.parentNode.removeChild(inputElement);
-        alert('Color Copied!')
+        alert('Color Copied!');
     });
 }
 
