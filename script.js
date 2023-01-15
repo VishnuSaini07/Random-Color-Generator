@@ -12,20 +12,20 @@ function colorGenerate() {
     }
     document.body.style.background = clr;
     Generatebtn.innerHTML = clr;
-
-    copyBtn.addEventListener("click", function(){
-        let colorValue = Generatebtn.innerText;
-
-        let inputElement = document.createElement('input');
-        inputElement.setAttribute('value', colorValue);
-        document.body.appendChild(inputElement);
-
-        inputElement.select();
-        document.execCommand("copy");
-        inputElement.parentNode.removeChild(inputElement);
-        alert('Color Copied!');
-    });
 }
+
+copyBtn.addEventListener("click", function(){
+    let colorValue = Generatebtn.innerText;
+
+    let inputElement = document.createElement('input');
+    inputElement.setAttribute('value', colorValue);
+    document.body.appendChild(inputElement);
+
+    inputElement.select();
+    document.execCommand("copy");
+    inputElement.parentNode.removeChild(inputElement);
+    alert('Color Copied!');
+});
 
 function randm(){
     return Math.floor(Math.random()*arr.length)
